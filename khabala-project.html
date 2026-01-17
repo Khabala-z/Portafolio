@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khabala Projects - Portfolio</title>
+    <link rel="stylesheet" href="khabala-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fondo de estrellas -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-arrow-left"></i>
+                <span>KHABALA<span class="accent">PROJECTS</span></span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#" class="nav-link active" data-filter="all">
+                    <i class="fas fa-th"></i> Todos
+                </a>
+                <a href="#" class="nav-link" data-filter="web">
+                    <i class="fas fa-globe"></i> Páginas Web
+                </a>
+                <a href="#" class="nav-link" data-filter="sistema">
+                    <i class="fas fa-laptop-code"></i> Sistemas
+                </a>
+                <a href="#" class="nav-link" data-filter="app">
+                    <i class="fas fa-mobile-alt"></i> Apps + Videojuegos
+                </a>
+                <a href="#" class="nav-link" data-filter="ia">
+                    <i class="fas fa-brain"></i> IA
+                </a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header/Hero -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <div class="profile-card">
+                <div class="profile-avatar">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h1 class="profile-name">Khabala Projects</h1>
+                <p class="profile-bio">Innovación en cada línea de código</p>
+                <blockquote class="motivational-quote">
+                    "Jamás permitas que te digan que no puedes hacer algo, tampoco yo. Si tienes un sueño tienes que perseguirlo. Las personas que no llegan muy lejos te dicen que tú serás como ellos. Si sueñas algo, realízalo. Punto."
+                </blockquote>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Proyectos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Próximos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Grid de Proyectos -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+                
+                <!-- QONVERTIR -->
+                <div class="project-card-new" data-category="web">
+                    <div class="project-header-new">
+                        <div class="project-image-new">
+                            <div class="project-placeholder-new">
+                              <img src="Img/projects/qonvertir.png" alt="QONVERTIR" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="qonvertir">
+                                <i class="fas fa-images"></i>
+                                <span>Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">QONVERTIR</h3>
+                            <div class="project-actions">
+                                <a href="https://qonvertir.com" target="_blank" class="project-link-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <span class="project-badge-category web"><i class="fas fa-globe"></i> Página Web</span>
+                            </div>
+                        </div>
+                        <p class="project-description-new">
+                            Plataforma web profesional de conversión de archivos con 6 herramientas: 
+                            generador QR, PDF tools, compresor de imágenes, conversor de formatos, 
+                            generador de contraseñas y contador de texto. Sin registro, 100% gratis.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-html"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="tech-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CALCUMAS -->
+                <div class="project-card-new" data-category="web">
+                    <div class="project-header-new">
+                        <div class="project-image-new">
+                            <div class="project-placeholder-new">
+                                <img src="Img/projects/calcumas.png" alt="CALCUMAS" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="calcumas">
+                                <i class="fas fa-images"></i>
+                                <span>Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">CALCUMAS</h3>
+                            <div class="project-actions">
+                                <a href="https://calcumas.com" target="_blank" class="project-link-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <span class="project-badge-category web"><i class="fas fa-globe"></i> Página Web</span>
+                            </div>
+                        </div>
+                        <p class="project-description-new">
+                            Suite completa de 4 calculadoras profesionales: científica con funciones 
+                            avanzadas, IMC y calorías, salario neto con ISR 2024 para México, y 
+                            préstamos con tabla de amortización. Optimizada con SEO y PWA.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-react"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-vite"><i class="fas fa-bolt"></i> Vite</span>
+                            <span class="tech-tailwind">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                                </svg>
+                                Tailwind
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NAIYA -->
+                <div class="project-card-new" data-category="ia app">
+                    <div class="project-header-new">
+                        <div class="project-image-new">
+                            <div class="project-placeholder-new">
+                           <img src="Img/projects/naiya.png" alt="Naiya" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="naiya">
+                                <i class="fas fa-images"></i>
+                                <span>Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">Naiya: La voz que une culturas</h3>
+                            <span class="project-badge-category ia"><i class="fas fa-brain"></i> IA</span>
+                        </div>
+                        <p class="project-description-new">
+                            Asistente de IA que traduce en tiempo real entre voz, texto y lenguaje de señas, 
+                            incluyendo lenguas indígenas mexicanas. Utiliza procesamiento de lenguaje natural 
+                            para eliminar barreras comunicativas y promover la inclusión.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-html"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="tech-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="tech-python"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-ai"><i class="fas fa-brain"></i> Gemini API</span>
+                            <span class="tech-ml"><i class="fas fa-robot"></i> Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AD+ -->
+                <div class="project-card-new" data-category="app">
+                    <div class="project-header-new">
+                        <div class="project-image-new" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                            <div class="project-placeholder-new">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <button class="gallery-btn" data-project="ad-plus">
+                                <i class="fas fa-images"></i>
+                                <span>Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">AD+ - Proyecto de Videojuegos</h3>
+                            <span class="project-badge-category videojuego"><i class="fas fa-gamepad"></i> Videojuegos</span>
+                        </div>
+                        <p class="project-description-new">
+                            Proyecto educativo donde desarrollé 3 videojuegos completos para estudiantes de 
+                            quinto grado. Incluye mecánicas de juego personalizadas, sistema de recompensas 
+                            y seguimiento de progreso para hacer el aprendizaje divertido.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-react"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-typescript"><i class="fab fa-js"></i> TypeScript</span>
+                            <span class="tech-tailwind">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                                </svg>
+                                Tailwind
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MIRUGO -->
+                <div class="project-card-new" data-category="web app">
+                    <div class="project-header-new">
+                        <div class="project-image-new" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);">
+                            <div class="project-placeholder-new">
+                               <img src="Img/projects/mirugo.png" alt="MIRUGO" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="mirugo">
+                                <i class="fas fa-images"></i>
+                                <span>Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">MIRUGO - Streaming Platform</h3>
+                            <span class="project-badge-category app"><i class="fas fa-mobile-alt"></i> App</span>
+                        </div>
+                        <p class="project-description-new">
+                            Plataforma web donde los usuarios pueden adquirir cuentas de streaming a precios 
+                            accesibles. Incluye una aplicación propia estilo Netflix para ver películas, series 
+                            y anime. Actualmente en fase MVP funcional.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-react"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-typescript"><i class="fab fa-js"></i> TypeScript</span>
+                            <span class="tech-tailwind">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                                </svg>
+                                Tailwind
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOCKCORTEX -->
+                <div class="project-card-new" data-category="ia">
+                    <div class="project-header-new">
+                        <div class="project-image-new" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);">
+                            <div class="project-placeholder-new">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <button class="gallery-btn" data-project="blockcortex">
+                                <i class="fas fa-images"></i>
+                                <span>Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">BLOCKCORTEX - IA Híbrida con Blockchain</h3>
+                            <span class="project-badge-category ia"><i class="fas fa-brain"></i> IA</span>
+                        </div>
+                        <p class="project-description-new">
+                            Sistema híbrido que combina IA centralizada para tareas cotidianas con IA 
+                            descentralizada basada en blockchain para fomentar la colaboración entre usuarios. 
+                            Incluye sistema de monedero virtual para el ecosistema colaborativo.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-python"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-ai"><i class="fas fa-cubes"></i> Blockchain</span>
+                            <span class="tech-ml"><i class="fas fa-wallet"></i> Wallet</span>
+                            <span class="tech-html"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="tech-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Villa Drone -->
+                <div class="project-card-new" data-category="sistema">
+                    <div class="project-header-new">
+                        <div class="project-image-new" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <div class="project-placeholder-new">
+                              <img src="Img/projects/villadrone.png" alt="Villa Drone" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="villadrone">
+                                <i class="fas fa-images"></i>
+                                <span>Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">Villa Drone</h3>
+                            <span class="project-badge-category sistema"><i class="fas fa-laptop-code"></i> Sistema</span>
+                        </div>
+                        <p class="project-description-new">
+                           Sistema web de gestión agrícola para automatizar aplicaciones con drones según ciclos fenológicos de cultivos. 
+                            Desarrollo completo desde análisis de requerimientos, diseño de base de datos, implementación de funcionalidades 
+                            (dashboard, calendario, mapas interactivos, reportes PDF), hasta el deploy y soporte continuo.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-php"><i class="fab fa-php"></i> PHP</span>
+                          <span class="tech-postgresql">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M17.128 0v3.749h-.1c-2.137 0-3.896.676-5.027 2.031v-2.031h-4.033v13.754h4.033v-6.312c0-1.764.835-3.128 2.729-3.128 1.644 0 2.457 1.118 2.457 2.828v6.612h4.033v-7.328c0-3.643-2.018-6.175-5.815-6.175h-.277v-3.749h-4.033v11.502h4.033z"/>
+                            </svg>
+                            PostgreSQL
+                           </span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="tech-bootstrap"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                            <span class="tech-html"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="tech-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sistema C.R.E.A.N -->
+                <div class="project-card-new" data-category="sistema">
+                    <div class="project-header-new">
+                        <div class="project-image-new" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <div class="project-placeholder-new">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <button class="gallery-btn" data-project="crean">
+                                <i class="fas fa-images"></i>
+                                <span>Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">Sistema C.R.E.A.N</h3>
+                            <span class="project-badge-category sistema"><i class="fas fa-laptop-code"></i> Sistema</span>
+                        </div>
+                        <p class="project-description-new">
+                             Sistema integral de gestión de inventarios empresarial para C.R.E.A.N (organismo del Gobierno del Estado de Nayarit). 
+                            Desarrollo completo de 8 módulos especializados para control exhaustivo del inventario de toda la empresa, 
+                            implementando arquitectura escalable, lógica de negocio robusta y sistema de reportes automatizados.    
+                        </p>
+                        <div class="project-tech-new">
+                        <span class="tech-php"><i class="fab fa-php"></i> PHP</span>
+                        <span class="tech-mysql"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tech-js"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-bootstrap"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span class="tech-html"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="tech-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximos Proyectos -->
+    <section class="upcoming-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-rocket"></i> PRÓXIMOS PROYECTOS
+            </h2>
+            <div class="upcoming-grid">
+                
+                <!-- NAIYA -->
+                <div class="upcoming-card">
+                    <div class="upcoming-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Naiya</h3>
+                    <p>App móvil de traducción multiidioma con IA, reconocimiento de voz en tiempo real y conversaciones fluidas.</p>
+                    <div class="upcoming-status">
+                        <span class="status-badge development">
+                            <i class="fas fa-code"></i> En Desarrollo
+                        </span>
+                    </div>
+                    <div class="upcoming-tech">
+                        <span class="tech-html"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="tech-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="tech-js"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-python"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-gemini">
+                            <i class="fas fa-brain"></i> Gemini API
+                        </span>
+                        <span class="tech-ai"><i class="fas fa-robot"></i> Machine Learning</span>
+                    </div>
+                </div>
+
+                <!-- VIDEOJUEGO DE TERROR -->
+                <div class="upcoming-card">
+                    <div class="upcoming-icon">
+                        <i class="fas fa-ghost"></i>
+                    </div>
+                    <h3>Videojuego de Terror</h3>
+                    <p>Juego de terror psicológico para móviles con atmósfera inmersiva, puzzles y mecánicas de supervivencia.</p>
+                    <div class="upcoming-status">
+                        <span class="status-badge planning">
+                            <i class="fas fa-lightbulb"></i> En Planeación
+                        </span>
+                    </div>
+                    <div class="upcoming-tech">
+                        <span class="tech-unity">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                                <path d="M12.929 12.929l-4.242 4.243L0 8.485l1.414-1.414 7.071 7.07 4.243-4.242zM24 7.071L15.515 0l-4.242 4.243 1.414 1.414 2.828-2.828 5.657 5.656-5.657 5.657-2.828-2.829-1.414 1.415L15.515 17.9 24 9.414z"/>
+                            </svg>
+                            Unity
+                        </span>
+                        <span class="tech-csharp">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                                <path d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zM9.426 7.12a5.55 5.55 0 011.985.38v1.181a4.5 4.5 0 00-2.25-.566 3.439 3.439 0 00-2.625 1.087 4.099 4.099 0 00-1.012 2.906 3.9 3.9 0 00.945 2.754 3.217 3.217 0 002.482 1.023 5.05 5.05 0 002.381-.556v1.181a6.281 6.281 0 01-2.38.42 4.255 4.255 0 01-3.308-1.336 5.022 5.022 0 01-1.23-3.482 5.415 5.415 0 011.316-3.746 4.465 4.465 0 013.532-1.443 6.303 6.303 0 01.164-.003zm7.37 2.113h.887v.958h-.887v2.297c0 .446.198.668.596.668.136 0 .274-.014.415-.04v.819c-.24.097-.491.148-.748.153-.93 0-1.395-.462-1.395-1.385v-2.512h-.748v-.958h.748v-1.129l1.133-.34v1.469zM15.001 9.233h1.05l1.062 3.108 1.151-3.108h1.031l-1.955 4.992h-.413l-1.926-4.992z"/>
+                            </svg>
+                            C#
+                        </span>
+                        <span class="tech-blender">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                                <path d="M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.153a3.389 3.389 0 0 1-2.374.938 3.393 3.393 0 0 1-2.376-.938c-.58-.567-.91-1.33-.865-2.152M7.35 14.831c.006.314.106.922.256 1.398a7.372 7.372 0 0 0 1.593 2.757 8.227 8.227 0 0 0 2.787 2.001 8.947 8.947 0 0 0 3.66.76 8.964 8.964 0 0 0 3.657-.772 8.285 8.285 0 0 0 2.785-2.01 7.428 7.428 0 0 0 1.592-2.762 6.964 6.964 0 0 0 .25-3.074 7.123 7.123 0 0 0-1.016-2.779 7.764 7.764 0 0 0-2.144-2.196 8.51 8.51 0 0 0-3.066-1.204 8.959 8.959 0 0 0-3.484.045c-.866.168-1.74.455-2.55.875a.864.864 0 0 0-.392.432c-.144.33-.009.713.197 1.084.156.275.38.546.619.757.665.586 1.591.85 2.455.973.93.132 1.88.089 2.814.012.526-.043 1.067-.114 1.566-.283.357-.12.71-.275 1.005-.52.208-.172.379-.386.494-.628.105-.222.15-.475.078-.714-.09-.3-.333-.506-.59-.661a4.478 4.478 0 0 0-1.06-.366 9.183 9.183 0 0 0-1.372-.16 9.537 9.537 0 0 0-2.556.162c-.866.177-1.74.455-2.550.875a.864.864 0 0 0-.392.432c-.144.33-.009.713.197 1.084.156.275.38.546.619.757.665.586 1.591.85 2.455.973.93.132 1.88.089 2.814.012.526-.043 1.067-.114 1.566-.283.357-.12.71-.275 1.005-.52.208-.172.379-.386.494-.628.105-.222.15-.475.078-.714-.09-.3-.333-.506-.59-.661a4.478 4.478 0 0 0-1.06-.366 9.183 9.183 0 0 0-1.372-.16c-.793-.048-1.596-.03-2.384.057-.843.093-1.693.263-2.484.603-.765.33-1.479.792-2.064 1.405-.577.604-1.038 1.33-1.334 2.124-.298.794-.42 1.645-.415 2.496"/>
+                            </svg>
+                            3D Design
+                        </span>
+                    </div>
+                </div>
+
+                <!-- SISTEMA DE VENTAS -->
+                <div class="upcoming-card">
+                    <div class="upcoming-icon">
+                        <i class="fas fa-cash-register"></i>
+                    </div>
+                    <h3>Sistema de Ventas</h3>
+                    <p>Sistema POS completo con control de inventarios, facturación, reportes y dashboard para pequeñas y medianas empresas.</p>
+                    <div class="upcoming-status">
+                        <span class="status-badge planning">
+                            <i class="fas fa-lightbulb"></i> En Planeación
+                        </span>
+                    </div>
+                    <div class="upcoming-tech">
+                        <span class="tech-python"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-mysql"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tech-html"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="tech-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="tech-js"><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+       <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Oscar Gael Pérez Verdín - <span class="highlight">Khabala</span></p>
+            <p>Desarrollado con 💜 y mucho ☕</p>
+        </div>
+    </footer>
+
+    <!-- Modal para Galería de Imágenes -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-modal-content">
+            <button class="gallery-close">&times;</button>
+            <div class="gallery-header">
+                <h3 id="galleryTitle">Galería del Proyecto</h3>
+            </div>
+            <div class="gallery-carousel">
+                <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="gallery-image-container">
+                    <img id="galleryImage" src="" alt="Imagen del proyecto">
+                    <p class="gallery-caption" id="galleryCaption"></p>
+                </div>
+                <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="gallery-thumbnails" id="galleryThumbnails">
+                <!-- Los thumbnails se cargarán dinámicamente -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal de Proyecto Sin Imágenes -->
+
+<div id="noImagesModal" class="gallery-modal">
+    <div class="no-images-content">
+        <button class="gallery-close" id="noImagesClose">&times;</button>
+        <div class="no-images-icon">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+        </div>
+        <h3>Galería No Disponible</h3>
+        <p>Las imágenes de este proyecto estarán disponibles próximamente.</p>
+        <button class="btn-primary" id="noImagesOk">Entendido</button>
+    </div>
+</div>
+
+    <script src="khabala-script.js"></script>
+</body>
+</html>
