@@ -205,7 +205,25 @@ document.querySelectorAll('.stat').forEach(stat => {
 // ========================================
 
 // Datos de proyectos con sus imágenes
-const projectGalleries = {
+
+// Inicializar galerías - se cargará con getProjectGalleries() cuando esté disponible
+let projectGalleries = null;
+
+// Función para inicializar/actualizar galerías
+function initProjectGalleries() {
+    if (typeof getProjectGalleries === 'function') {
+        projectGalleries = getProjectGalleries();
+        console.log('✓ Galerías Khabala cargadas con traducciones dinámicas');
+    } else {
+        // Fallback si translations.js aún no está disponible
+        console.warn('getProjectGalleries() no disponible, usando datos estáticos');
+        loadStaticGalleries();
+    }
+}
+
+// Fallback: Cargar datos estáticos de galerías
+function loadStaticGalleries() {
+    projectGalleries = {
     'qonvertir': {
         title: 'QONVERTIR',
         images: [
@@ -325,7 +343,22 @@ const projectGalleries = {
         images: []
     }
 };
-// Estado de la galería
+    };
+
+
+// Intentar inicializar galerías inmediatamente
+initProjectGalleries();
+
+// También reinicializar cuando DOMContentLoaded para asegurar que translations.js esté cargado
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        initProjectGalleries();
+    });
+} else {
+    // El DOM ya está listo
+    initProjectGalleries();
+}
+
 let currentGallery = null;
 let currentImageIndex = 0;
 
