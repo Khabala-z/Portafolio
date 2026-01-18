@@ -1,0 +1,57 @@
+/* BOTÓN DE IDIOMA - Diseño simple y elegante */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+}
+
+#lang-button {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.9rem;
+    background: transparent;
+    border: 1.5px solid rgba(139, 92, 246, 0.4);
+    border-radius: 20px;
+    color: #8b5cf6;
+    font-weight: 500;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#lang-button:hover {
+    background: rgba(139, 92, 246, 0.1);
+    border-color: #8b5cf6;
+    transform: scale(1.05);
+}
+
+#lang-button:active {
+    transform: scale(0.98);
+}
+
+.flag {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.lang-text {
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #lang-button {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.8rem;
+    }
+    
+    .flag {
+        font-size: 1rem;
+    }
+    
+    .lang-text {
+        font-size: 0.75rem;
+    }
+}
