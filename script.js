@@ -161,7 +161,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Preloader (opcional)
+// Preloader 
 window.addEventListener('load', () => {
     const preloader = document.querySelector('.preloader');
     if (preloader) {
@@ -246,17 +246,28 @@ document.querySelectorAll('img[data-src]').forEach(img => {
 
 console.log('%c✨ Portfolio cargado exitosamente', 'font-size: 12px; color: #10b981; font-weight: bold;');
 
+
 // ========================================
 // GALERÍA DE IMÁGENES - SISTEMA COMPLETO
 // ========================================
 
-// Datos de proyectos con sus imágenes
-// ========================================
-// GALERÍA DE IMÁGENES - SISTEMA COMPLETO
-// ========================================
+let projectGalleries = null;
 
-// Datos de proyectos con sus imágenes
-const projectGalleries = {
+// Función para inicializar/actualizar galerías
+function initProjectGalleries() {
+    if (typeof getProjectGalleries === 'function') {
+        projectGalleries = getProjectGalleries();
+        console.log('✓ Galerías cargadas con traducciones dinámicas');
+    } else {
+        // Fallback si translations.js aún no está disponible
+        console.warn('getProjectGalleries() no disponible, usando datos estáticos');
+        loadStaticGalleries();
+    }
+}
+
+// Fallback: Cargar datos estáticos de galerías
+function loadStaticGalleries() {
+    projectGalleries = {
     'qonvertir': {
         title: 'QONVERTIR',
         images: [
@@ -376,6 +387,15 @@ const projectGalleries = {
         images: []
     }
 };
+    };
+
+// Intentar inicializar galerías inmediatamente
+initProjectGalleries();
+
+// También reinicializar cuando DOMContentLoaded para asegurar que translations.js esté cargado
+document.addEventListener('DOMContentLoaded', () => {
+    initProjectGalleries();
+});
 
 // Estado de la galería
 let currentGallery = null;
