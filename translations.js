@@ -1,6 +1,3 @@
-
-
-// Objeto para guardar los textos originales capturados del HTML
 const originalTexts = {};
 
 // Traducciones al inglés
@@ -1136,4 +1133,5 @@ window.updateProjectGalleries = function() {
     if (typeof window.projectGalleries !== 'undefined') {
         window.projectGalleries = getProjectGalleries();
     }
+
 };
