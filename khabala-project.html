@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos + - Portfolio</title>
+    <link rel="stylesheet" href="khabala-style.css">
+    <link rel="stylesheet" href="lang-switcher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-transition-overlay"></div>
+    <!-- Fondo de estrellas -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-arrow-left"></i>
+                <span>PROYECTOS<span class="accent">+</span></span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#" class="nav-link active" data-filter="all" data-i18n="khabala.nav.all">
+                    <i class="fas fa-th"></i> Todos
+                </a>
+                <a href="#" class="nav-link" data-filter="web" data-i18n="khabala.nav.web">
+                    <i class="fas fa-globe"></i> Páginas Web
+                </a>
+                <a href="#" class="nav-link" data-filter="sistema" data-i18n="khabala.nav.systems">
+                    <i class="fas fa-laptop-code"></i> Sistemas
+                </a>
+                <a href="#" class="nav-link" data-filter="app" data-i18n="khabala.nav.apps">
+                    <i class="fas fa-mobile-alt"></i> Apps + Videojuegos
+                </a>
+                <a href="#" class="nav-link" data-filter="ia" data-i18n="khabala.nav.ai">
+                    <i class="fas fa-brain"></i> IA
+                </a>
+            </div>
+            <div class="lang-switcher">
+            <button id="lang-button">
+                <span class="flag">🇺🇸</span>
+                <span class="lang-text">EN</span>
+            </button>
+        </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <div class="profile-card glass-panel">
+                <div class="profile-avatar">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h1 class="profile-name" data-i18n="khabala.hero.title">Proyectos <span class="accent">+</span></h1>
+                <p class="profile-bio" data-i18n="khabala.hero.bio">Portafolio Extendido de Soluciones y Logros</p>
+                <blockquote class="motivational-quote" data-i18n="khabala.hero.quote">
+                    "El éxito no es el final, el fracaso no es fatal: es el valor para continuar lo que cuenta."
+                </blockquote>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="projectCount">0</span>
+                        <span class="stat-label" data-i18n="khabala.hero.stats.projects">Desarrollados</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="upcomingCount">0</span>
+                        <span class="stat-label" data-i18n="khabala.hero.stats.upcoming">Próximos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Grid de Proyectos -->
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-rocket"></i></span>
+                <span data-i18n="khabala.grid.title">PROYECTOS Y LOGROS</span>
+            </h2>
+            <div class="projects-grid" id="projects-grid">
+                
+                <!-- Villa Drone -->
+                <div class="project-card-new" data-category="sistema">
+                    <div class="project-header-new">
+                        <div class="project-image-new">
+                            <div class="project-placeholder-new">
+                                <img src="Img/projects/villadrone.png" alt="Villa Drone" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="villadrone">
+                                <i class="fas fa-images"></i>
+                                <span data-i18n="khabala.projectDetails.viewGallery">Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">Villa Drone</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OscarGael" target="_blank" class="project-link-btn github" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <span class="metric-badge" data-i18n="projectsSection.projects.villaDrone.metric"><i class="fas fa-chart-line"></i> Tiempo Real</span>
+                        </div>
+                        <p class="project-description-new" data-i18n="projectsSection.projects.villaDrone.description">
+                            Sistema experto de gestión agrícola para optimizar aplicaciones aéreas con drones. Centraliza operatividad técnica y financiera.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-php"><i class="fab fa-php"></i> PHP</span>
+                            <span class="tech-postgresql"><i class="fas fa-database"></i> SQL</span>
+                            <span class="tech-leaflet"><i class="fas fa-map-marked-alt"></i> Leaflet</span>
+                            <span class="tech-api"><i class="fas fa-cloud"></i> Weather API</span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sistema C.R.E.A.N -->
+                <div class="project-card-new" data-category="sistema">
+                    <div class="project-header-new">
+                        <div class="project-image-new" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <div class="project-placeholder-new">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <button class="gallery-btn" data-project="crean">
+                                <i class="fas fa-images"></i>
+                                <span data-i18n="khabala.projectDetails.viewGallery">Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">Sistema C.R.E.A.N</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OscarGael" target="_blank" class="project-link-btn github" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <span class="metric-badge" data-i18n="projectsSection.projects.crean.metric"><i class="fas fa-boxes"></i> 8 Módulos</span>
+                        </div>
+                        <p class="project-description-new" data-i18n="projectsSection.projects.crean.description">
+                            ERP corporativo de alto impacto para la administración centralizada de inventarios estatales. Arquitectura modular.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-php"><i class="fab fa-php"></i> PHP</span>
+                            <span class="tech-mysql"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tech-leaflet"><i class="fas fa-map-marked-alt"></i> Leaflet</span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formula Deportiva -->
+                <div class="project-card-new" data-category="web">
+                    <div class="project-header-new">
+                        <div class="project-image-new">
+                            <div class="project-placeholder-new">
+                                <img src="Img/projects/formula.png" alt="Fórmula Deportiva" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="formula-deportiva">
+                                <i class="fas fa-images"></i>
+                                <span data-i18n="khabala.projectDetails.viewGallery">Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">Fórmula Deportiva</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OscarGael" target="_blank" class="project-link-btn github" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <span class="metric-badge" data-i18n="projectsSection.projects.formulaDeportiva.metric"><i class="fas fa-chart-bar"></i> Live Stats</span>
+                        </div>
+                        <p class="project-description-new" data-i18n="projectsSection.projects.formulaDeportiva.description">
+                            Gestión de torneos y estadísticas deportivas en tiempo real. Sistema de registro y tablas automatizadas.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-nodejs"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-react"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-mysql"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tech-tailwind">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                                </svg>
+                                Tailwind
+                            </span>
+                            <span class="tech-vite"><i class="fas fa-bolt"></i> Vite</span>
+                            <span class="tech-jwt"><i class="fas fa-key"></i> JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QONVERTIR -->
+                <div class="project-card-new" data-category="web">
+                    <div class="project-header-new">
+                        <div class="project-image-new">
+                            <div class="project-placeholder-new">
+                                <img src="Img/projects/qonvertir.png" alt="QONVERTIR" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="qonvertir">
+                                <i class="fas fa-images"></i>
+                                <span data-i18n="khabala.projectDetails.viewGallery">Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">QONVERTIR</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OscarGael" target="_blank" class="project-link-btn github" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://qonvertir.com" target="_blank" class="project-link-btn external" title="Ver Sitio">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <span class="metric-badge" data-i18n="projectsSection.projects.qonvertir.metric"><i class="fas fa-rocket"></i> Plataforma Live</span>
+                        </div>
+                        <p class="project-description-new" data-i18n="projectsSection.projects.qonvertir.description">
+                            Plataforma web profesional de conversión de archivos con herramientas PDF, QR, y optimización de medios. Sin registro y 100% gratuita.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-html"><i class="fab fa-html5"></i> HTML</span>
+                            <span class="tech-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CALCUMAS -->
+                <div class="project-card-new" data-category="web">
+                    <div class="project-header-new">
+                        <div class="project-image-new">
+                            <div class="project-placeholder-new">
+                                <img src="Img/projects/calcumas.png" alt="CALCUMAS" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="calcumas">
+                                <i class="fas fa-images"></i>
+                                <span data-i18n="khabala.projectDetails.viewGallery">Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">CALCUMAS</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OscarGael" target="_blank" class="project-link-btn github" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://calcumas.com" target="_blank" class="project-link-btn external" title="Ver Sitio">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <span class="metric-badge" data-i18n="projectsSection.projects.calcumas.metric"><i class="fas fa-rocket"></i> Plataforma Live</span>
+                        </div>
+                        <p class="project-description-new" data-i18n="projectsSection.projects.calcumas.description">
+                            Suite completa de calculadoras profesionales (Científica, Salud, Nómina ISR 2024 y Préstamos). Optimizada como PWA para uso offline.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-react"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JS</span>
+                            <span class="tech-tailwind">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                                </svg>
+                                Tailwind
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Naiya -->
+                <div class="project-card-new" data-category="ia app">
+                    <div class="project-header-new">
+                        <div class="project-image-new" style="background: linear-gradient(135deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%);">
+                            <div class="project-placeholder-new">
+                                <img src="Img/projects/naiya.png" alt="Naiya" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="naiya">
+                                <i class="fas fa-images"></i>
+                                <span data-i18n="khabala.projectDetails.viewGallery">Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">Naiya</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OscarGael" target="_blank" class="project-link-btn github" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <span class="metric-badge" data-i18n="projectsSection.projects.naiya.metric"><i class="fas fa-mobile-alt"></i> Aplicación Móvil IA</span>
+                            <span class="event-badge expociencia" data-i18n="projectsSection.events.expociencia2025"><i class="fas fa-award"></i> Expociencia 2025</span>
+                        </div>
+                        <p class="project-description-new" data-i18n="projectsSection.projects.naiya.description">
+                            Asistente de IA de traducción inclusiva (Voz, Texto, Lenguaje de Señas). Elimina barreras comunicativas promoviendo la inclusión.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-python"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-ai"><i class="fas fa-brain"></i> Gemini API</span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JS</span>
+                            <span class="tech-ml"><i class="fas fa-robot"></i> ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AD+ -->
+                <div class="project-card-new" data-category="app">
+                    <div class="project-header-new">
+                        <div class="project-image-new" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="project-placeholder-new">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <button class="gallery-btn" data-project="adplus">
+                                <i class="fas fa-images"></i>
+                                <span data-i18n="khabala.projectDetails.viewGallery">Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">AD+</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OscarGael" target="_blank" class="project-link-btn github" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <span class="metric-badge" data-i18n="projectsSection.projects.adplus.metric"><i class="fas fa-mobile-alt"></i> Aplicación Móvil</span>
+                            <div style="display: flex; gap: 5px; flex-wrap: wrap; margin-top: 5px;">
+                                <span class="event-badge hackathon" data-i18n="projectsSection.events.hackathon2025"><i class="fas fa-trophy"></i> Hackathon 2025</span>
+                            </div>
+                        </div>
+                        <p class="project-description-new" data-i18n="projectsSection.projects.adplus.description">
+                            Videojuegos educativos diseñados con Unity y React para fortalecer el aprendizaje en primaria.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-unity"><i class="fab fa-unity"></i> Unity</span>
+                            <span class="tech-typescript"><i class="fab fa-js"></i> TS</span>
+                            <span class="tech-react"><i class="fab fa-react"></i> React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOCKCORTEX -->
+                <div class="project-card-new" data-category="ia">
+                    <div class="project-header-new">
+                        <div class="project-header-new">
+                        <div class="project-image-new" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);">
+                            <div class="project-placeholder-new">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <button class="gallery-btn" data-project="blockcortex">
+                                <i class="fas fa-images"></i>
+                                <span data-i18n="khabala.projectDetails.viewGallery">Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">BLOCKCORTEX</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OscarGael" target="_blank" class="project-link-btn github" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <span class="metric-badge" data-i18n="projectsSection.projects.blockcortex.metric"><i class="fas fa-brain"></i> IA & Wallet</span>
+                            <span class="event-badge hackathon" data-i18n="projectsSection.events.hackathon2024"><i class="fas fa-trophy"></i> Hackathon 2024</span>
+                        </div>
+                        <p class="project-description-new" data-i18n="projectsSection.projects.blockcortex.description">
+                            Sistema híbrido que combina IA centralizada con descentralización Blockchain y monedero virtual.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-python"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-ml"><i class="fas fa-robot"></i> ML</span>
+                            <span class="tech-wallet"><i class="fas fa-wallet"></i> Wallet</span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MIRUGO -->
+                <div class="project-card-new" data-category="web app">
+                    <div class="project-header-new">
+                        <div class="project-image-new" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);">
+                            <div class="project-placeholder-new">
+                                <img src="Img/projects/mirugo.png" alt="MIRUGO" class="project-image">
+                            </div>
+                            <button class="gallery-btn" data-project="mirugo">
+                                <i class="fas fa-images"></i>
+                                <span data-i18n="khabala.projectDetails.viewGallery">Ver galería</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body-new">
+                        <div class="project-title-row">
+                            <h3 class="project-title-new">MIRUGO</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OscarGael" target="_blank" class="project-link-btn github" title="Ver Código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-metrics">
+                            <span class="metric-badge" data-i18n="projectsSection.projects.mirugo.metric"><i class="fas fa-play"></i> MVP Beta</span>
+                        </div>
+                        <p class="project-description-new" data-i18n="projectsSection.projects.mirugo.description">
+                            Plataforma de streaming unificada para adquirir y disfrutar contenidos de diversas plataformas a precios competitivos.
+                        </p>
+                        <div class="project-tech-new">
+                            <span class="tech-react"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-js"><i class="fab fa-js"></i> JS</span>
+                            <span class="tech-tailwind">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                                </svg>
+                                Tailwind
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximos Proyectos -->
+    <section class="upcoming-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-history"></i></span>
+                <span data-i18n="khabala.upcoming.title">PRÓXIMOS PROYECTOS</span>
+            </h2>
+            <div class="upcoming-grid">
+                
+                <!-- PROYECTO X -->
+                <div class="upcoming-card">
+                    <div class="upcoming-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 data-i18n="khabala.upcoming.project1.title">Proyecto X</h3>
+                    <p data-i18n="khabala.upcoming.project1.description">Innovación en desarrollo...</p>
+                    <div class="upcoming-status">
+                        <span class="status-badge development">
+                            <i class="fas fa-code"></i> <span data-i18n="khabala.upcoming.status.dev">En Desarrollo</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- VIDEOJUEGO DE TERROR -->
+                <div class="upcoming-card">
+                    <div class="upcoming-icon">
+                        <i class="fas fa-ghost"></i>
+                    </div>
+                    <h3>Videojuego de Terror</h3>
+                    <p>Juego de terror psicológico para móviles con atmósfera inmersiva, puzzles y mecánicas de supervivencia.</p>
+                    <div class="upcoming-status">
+                        <span class="status-badge planning">
+                            <i class="fas fa-lightbulb"></i> En Planeación
+                        </span>
+                    </div>
+                    <div class="project-tech-new">
+                        <span class="tech-unity">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                                <path d="M12.929 12.929l-4.242 4.243L0 8.485l1.414-1.414 7.071 7.07 4.243-4.242zM24 7.071L15.515 0l-4.242 4.243 1.414 1.414 2.828-2.828 5.657 5.656-5.657 5.657-2.828-2.829-1.414 1.415L15.515 17.9 24 9.414z"/>
+                            </svg>
+                            Unity
+                        </span>
+                        <span class="tech-csharp">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                                <path d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zM9.426 7.12a5.55 5.55 0 011.985.38v1.181a4.5 4.5 0 00-2.25-.566 3.439 3.439 0 00-2.625 1.087 4.099 4.099 0 00-1.012 2.906 3.9 3.9 0 00.945 2.754 3.217 3.217 0 002.482 1.023 5.05 5.05 0 002.381-.556v1.181a6.281 6.281 0 01-2.38.42 4.255 4.255 0 01-3.308-1.336 5.022 5.022 0 01-1.23-3.482 5.415 5.415 0 011.316-3.746 4.465 4.465 0 013.532-1.443 6.303 6.303 0 01.164-.003zm7.37 2.113h.887v.958h-.887v2.297c0 .446.198.668.596.668.136 0 .274-.014.415-.04v.819c-.24.097-.491.148-.748.153-.93 0-1.395-.462-1.395-1.385v-2.512h-.748v-.958h.748v-1.129l1.133-.34v1.469zM15.001 9.233h1.05l1.062 3.108 1.151-3.108h1.031l-1.955 4.992h-.413l-1.926-4.992z"/>
+                            </svg>
+                            C#
+                        </span>
+                        <span class="tech-blender">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                                <path d="M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.153a3.389 3.389 0 0 1-2.374.938 3.393 3.393 0 0 1-2.376-.938c-.58-.567-.91-1.33-.865-2.152M7.35 14.831c.006.314.106.922.256 1.398a7.372 7.372 0 0 0 1.593 2.757 8.227 8.227 0 0 0 2.787 2.001 8.947 8.947 0 0 0 3.66.76 8.964 8.964 0 0 0 3.657-.772 8.285 8.285 0 0 0 2.785-2.01 7.428 7.428 0 0 0 1.592-2.762 6.964 6.964 0 0 0 .25-3.074 7.123 7.123 0 0 0-1.016-2.779 7.764 7.764 0 0 0-2.144-2.196 8.51 8.51 0 0 0-3.066-1.204 8.959 8.959 0 0 0-3.484.045c-.866.168-1.74.455-2.55.875a.864.864 0 0 0-.392.432c-.144.33-.009.713.197 1.084.156.275.38.546.619.757.665.586 1.591.85 2.455.973.93.132 1.88.089 2.814.012.526-.043 1.067-.114 1.566-.283.357-.12.71-.275 1.005-.52.208-.172.379-.386.494-.628.105-.222.15-.475.078-.714-.09-.3-.333-.506-.59-.661a4.478 4.478 0 0 0-1.06-.366 9.183 9.183 0 0 0-1.372-.16 9.537 9.537 0 0 0-2.556.162c-.866.177-1.74.455-2.550.875a.864.864 0 0 0-.392.432c-.144.33-.009.713.197 1.084.156.275.38.546.619.757.665.586 1.591.85 2.455.973.93.132 1.88.089 2.814.012.526-.043 1.067-.114 1.566-.283.357-.12.71-.275 1.005-.52.208-.172.379-.386.494-.628.105-.222.15-.475.078-.714-.09-.3-.333-.506-.59-.661a4.478 4.478 0 0 0-1.06-.366 9.183 9.183 0 0 0-1.372-.16c-.793-.048-1.596-.03-2.384.057-.843.093-1.693.263-2.484.603-.765.33-1.479.792-2.064 1.405-.577.604-1.038 1.33-1.334 2.124-.298.794-.42 1.645-.415 2.496"/>
+                            </svg>
+                            3D Design
+                        </span>
+                    </div>
+                </div>
+
+                <!-- SISTEMA DE VENTAS -->
+                <div class="upcoming-card">
+                    <div class="upcoming-icon">
+                        <i class="fas fa-cash-register"></i>
+                    </div>
+                    <h3>Sistema de Ventas</h3>
+                    <p>Sistema POS completo con control de inventarios, facturación, reportes y dashboard para pequeñas y medianas empresas.</p>
+                    <div class="upcoming-status">
+                        <span class="status-badge planning">
+                            <i class="fas fa-lightbulb"></i> En Planeación
+                        </span>
+                    </div>
+                    <div class="project-tech-new">
+                        <span class="tech-python"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-mysql"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="tech-html"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="tech-css"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="tech-js"><i class="fab fa-js"></i> JS</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+       <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Oscar Gael Pérez Verdín - <span class="highlight">Khabala</span></p>
+            <p>Desarrollado con 💜 y mucho ☕</p>
+        </div>
+    </footer>
+
+    <!-- Modal para Galería de Imágenes -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-modal-content">
+            <button class="gallery-close">&times;</button>
+            <div class="gallery-header">
+                <h3 id="galleryTitle">Galería del Proyecto</h3>
+            </div>
+            <div class="gallery-carousel">
+                <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="gallery-image-container">
+                    <img id="galleryImage" src="" alt="Imagen del proyecto">
+                    <p class="gallery-caption" id="galleryCaption"></p>
+                </div>
+                <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="gallery-thumbnails" id="galleryThumbnails">
+                <!-- Los thumbnails se cargarán dinámicamente -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal de Proyecto Sin Imágenes -->
+
+<div id="noImagesModal" class="gallery-modal">
+    <div class="no-images-content">
+        <button class="gallery-close" id="noImagesClose">&times;</button>
+        <div class="no-images-icon">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+        </div>
+        <h3>Galería No Disponible</h3>
+        <p>Las imágenes de este proyecto estarán disponibles próximamente.</p>
+        <button class="btn-primary" id="noImagesOk">Entendido</button>
+    </div>
+</div>
+
+    <!-- Notificaciones Toast -->
+    <div id="toast" class="toast">¡Mensaje enviado con éxito!</div>
+
+    <!-- Cursor Personalizado -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <script src="khabala-script.js"></script>
+    <script src="translations.js"></script>
+</body>
+</html>
