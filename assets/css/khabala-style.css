@@ -369,12 +369,20 @@ body {
 .project-image-new {
     position: relative;
     height: 180px;
-    background: var(--gradient-1);
+    background: #000; /* Fondo sólido para imágenes con contain */
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
+
+.project-image-new img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
 
 .project-placeholder-new {
     font-size: 3.5rem;
@@ -785,6 +793,78 @@ body {
     color: #264de4;
 }
 .tech-css i { color: #264de4; }
+
+/* Java - Naranja/Rojo */
+.tech-java {
+    background: rgba(237, 31, 36, 0.1);
+    border-color: #ed1f24 !important;
+    color: #f89820;
+}
+.tech-java i { color: #f89820; }
+
+/* Spring - Verde */
+.tech-spring {
+    background: rgba(109, 179, 63, 0.15);
+    border-color: #6db33f !important;
+    color: #6db33f;
+}
+.tech-spring i { color: #6db33f; }
+
+/* Flask - Blanco/Gris */
+.tech-flask {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #ffffff !important;
+    color: #f8f9fa;
+}
+.tech-flask i { color: #f8f9fa; }
+
+/* Pandas - Azul Oscuro */
+.tech-pandas {
+    background: rgba(21, 1, 85, 0.2);
+    border-color: #150458 !important;
+    color: #ffca00;
+}
+.tech-pandas i { color: #ffca00; }
+
+/* Google Scripts - Azul Google */
+.tech-google-scripts {
+    background: rgba(66, 133, 244, 0.15);
+    border-color: #4285f4 !important;
+    color: #4285f4;
+}
+.tech-google-scripts i { color: #4285f4; }
+
+/* Docker - Azul Docker */
+.tech-docker {
+    background: rgba(36, 150, 237, 0.15);
+    border-color: #2496ed !important;
+    color: #2496ed;
+}
+.tech-docker i { color: #2496ed; }
+
+/* Maven - Rojo/Cereza */
+.tech-maven {
+    background: rgba(199, 26, 54, 0.15);
+    border-color: #c71a36 !important;
+    color: #c71a36;
+}
+.tech-maven i { color: #c71a36; }
+
+/* Quartz - Cian */
+.tech-quartz {
+    background: rgba(0, 188, 212, 0.15);
+    border-color: #00bcd4 !important;
+    color: #00bcd4;
+}
+.tech-quartz i { color: #00bcd4; }
+
+/* H2 Database - Azul Marino */
+.tech-h2 {
+    background: rgba(0, 51, 102, 0.15);
+    border-color: #003366 !important;
+    color: #003366;
+}
+.tech-h2 i { color: #003366; }
 
 .upcoming-status {
     margin: 1rem 0;

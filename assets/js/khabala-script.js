@@ -219,19 +219,19 @@ function loadStaticGalleries() {
         title: 'QONVERTIR',
         images: [
             {
-                src: 'Img/galleries/qonvertir/qonvertir.png',
+                src: 'assets/img/galleries/qonvertir/qonvertir.png',
                 caption: 'Página principal con todas las herramientas'
             },
             {
-                src: 'Img/galleries/qonvertir/qon.png',
+                src: 'assets/img/galleries/qonvertir/qon.png',
                 caption: 'Generador de códigos QR'
             },
             {
-                src: 'Img/galleries/qonvertir/qon2.png',
+                src: 'assets/img/galleries/qonvertir/qon2.png',
                 caption: 'Herramientas PDF'
             },
             {
-                src: 'Img/galleries/qonvertir/qon3.png',
+                src: 'assets/img/galleries/qonvertir/qon3.png',
                 caption: 'Compresor de Imagenes'
             },
         ]
@@ -240,23 +240,23 @@ function loadStaticGalleries() {
         title: 'CALCUMAS',
         images: [
             {
-                src: 'Img/galleries/calcumas/calcumas.png',
+                src: 'assets/img/galleries/calcumas/calcumas.png',
                 caption: 'Página de inicio con las 4 calculadoras'
             },
             {
-                src: 'Img/galleries/calcumas/cal4.png',
+                src: 'assets/img/galleries/calcumas/cal4.png',
                 caption: 'Calculadora científica'
             },
             {
-                src: 'Img/galleries/calcumas/cal.png',
+                src: 'assets/img/galleries/calcumas/cal.png',
                 caption: 'Calculadora de IMC y calorías'
             },
             {
-                src: 'Img/galleries/calcumas/cal2.png',
+                src: 'assets/img/galleries/calcumas/cal2.png',
                 caption: 'Calculadora de salario neto México'
             },
             {
-                src: 'Img/galleries/calcumas/cal3.png',
+                src: 'assets/img/galleries/calcumas/cal3.png',
                 caption: 'Calculadora de Prestamos'
             }
         ]
@@ -265,23 +265,23 @@ function loadStaticGalleries() {
         title: 'Naiya: La voz que une culturas',
         images: [
             {
-                src: 'Img/galleries/naiya/naiya.png',
+                src: 'assets/img/galleries/naiya/naiya.png',
                 caption: 'Pantalla principal'
             },
             {
-                src: 'Img/galleries/naiya/nai2.png',
+                src: 'assets/img/galleries/naiya/nai2.png',
                 caption: 'Comunidad'
             },
             {
-                src: 'Img/galleries/naiya/nai3.png',
+                src: 'assets/img/galleries/naiya/nai3.png',
                 caption: 'Notas'
             },
             {
-                src: 'Img/galleries/naiya/nai4.png',
+                src: 'assets/img/galleries/naiya/nai4.png',
                 caption: 'Estudio'
             },
             {
-                src: 'Img/galleries/naiya/nai5.png',
+                src: 'assets/img/galleries/naiya/nai5.png',
                 caption: 'Ajuste'
             }
         ]
@@ -294,23 +294,23 @@ function loadStaticGalleries() {
         title: 'MIRUGO - Streaming Platform',
         images: [
                {
-                src: 'Img/galleries/mirugo/mirugo.png',
+                src: 'assets/img/galleries/mirugo/mirugo.png',
                 caption: 'Página principal de Inicio'
             },
             {
-                src: 'Img/galleries/mirugo/mir3.png',
+                src: 'assets/img/galleries/mirugo/mir3.png',
                 caption: 'Inicio de Sesion'
             },
             {
-                src: 'Img/galleries/mirugo/mir2.png',
+                src: 'assets/img/galleries/mirugo/mir2.png',
                 caption: 'Creador de Perfiles'
             },
             {
-                src: 'Img/galleries/mirugo/mir4.png',
+                src: 'assets/img/galleries/mirugo/mir4.png',
                 caption: 'Catálogo de contenido'
             },
             {
-                src: 'Img/galleries/mirugo/mir5.png',
+                src: 'assets/img/galleries/mirugo/mir5.png',
                 caption: 'Reproductor de video'
             }
         ]
@@ -323,7 +323,7 @@ function loadStaticGalleries() {
         title: 'Villa Drone - Sistema Agrícola',
         images: [
             {
-                src: 'Img/projects/villadrone.png',
+                src: 'assets/img/projects/villadrone.png',
                 caption: 'Dashboard principal de Villa Drone'
             }
         ]
@@ -332,7 +332,7 @@ function loadStaticGalleries() {
         title: 'C.R.E.A.N - Sistema de Inventarios',
         images: [
             {
-                src: 'Img/projects/qonvertir.png',
+                src: 'assets/img/projects/qonvertir.png',
                 caption: 'Panel Administrativo (Placeholder)'
             }
         ]
@@ -341,13 +341,31 @@ function loadStaticGalleries() {
         title: 'Fórmula Deportiva',
         images: [
             {
-                src: 'Img/projects/formula.png',
+                src: 'assets/img/projects/formula.png',
                 caption: 'Plataforma Fórmula Deportiva Live'
+            }
+        ]
+    },
+    'report-automation': {
+        title: 'ReportOps System',
+        images: [
+            {
+                src: 'assets/img/galleries/ReportOps/Rep1.png',
+                caption: 'Procesamiento de Archivos'
+            },
+            {
+                src: 'assets/img/galleries/ReportOps/Rep2.png',
+                caption: 'Dashboard de Métricas'
+            },
+            {
+                src: 'assets/img/galleries/ReportOps/Rep3.png',
+                caption: 'Configuración de Automatización'
             }
         ]
     }
 };
-    };
+console.log('✓ Galerías estáticas cargadas:', Object.keys(projectGalleries));
+}
 
 
 // Intentar inicializar galerías inmediatamente

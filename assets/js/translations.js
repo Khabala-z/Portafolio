@@ -108,6 +108,18 @@ const translations = {
                 blockcortex: {
                     description: "Sistema híbrido que combina IA centralizada con descentralización Blockchain. Incluye sistema de monedero virtual para el ecosistema colaborativo.",
                     metric: "IA & Wallet"
+                },
+                taskOrchestrator: {
+                    description: "Orquestador de tareas programadas con persistencia mediante Quartz. Capaz de gestionar ejecuciones diferidas y recurrentes de forma robusta y escalable.",
+                    metric: "Persistencia & Quartz"
+                },
+                notificationService: {
+                    description: "Microservicio para el envío de notificaciones asíncronas y generación de reportes profesionales. Optimiza el tiempo de respuesta mediante procesamiento en segundo plano.",
+                    metric: "Procesamiento Async"
+                },
+                reportAutomation: {
+                    description: "Sistema integral para la automatización de reportes operativos. Incluye limpieza inteligente de datos con Pandas, almacenamiento relacional y dashboard dinámico.",
+                    metric: "Sistema ReportOps"
                 }
             },
             events: {
@@ -280,6 +292,18 @@ const translations = {
                 blockcortex: {
                     description: "Hybrid system combining centralized AI with Blockchain decentralization. Includes virtual wallet system for the collaborative ecosystem.",
                     metric: "AI & Wallet"
+                },
+                taskOrchestrator: {
+                    description: "Scheduled task orchestrator with persistence using Quartz. Capable of managing deferred and recurrent executions in a robust and scalable way.",
+                    metric: "Persistence & Quartz"
+                },
+                notificationService: {
+                    description: "Microservice for sending asynchronous notifications and generating professional reports. Optimizes response time through background processing.",
+                    metric: "Async Processing"
+                },
+                reportAutomation: {
+                    description: "Comprehensive system for operational report automation. Includes intelligent data cleaning with Pandas, relational storage, and a dynamic dashboard.",
+                    metric: "ReportOps System"
                 }
             },
             events: {
